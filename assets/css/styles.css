@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #000;
+}
+
+.timer {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 50px;
+  background-color: #c90018;
+}
+
+.field {
+  margin-right: 50px;
+}
+.field:last-child {
+  margin: 0;
+}
+
+.value {
+  display: block;
+  margin-bottom: -45px;
+}
+
+.label {
+  font-size: 20px;
+  color: #858585;
+}
+
+button {
+  margin: 20px 5px 0;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #870010;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
