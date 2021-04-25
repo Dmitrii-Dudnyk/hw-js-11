@@ -16,16 +16,17 @@ class CountdownTimer {
     this.updateTime(this.targetDate);
 
     const timerId = setInterval(() => {
-      if (new Date() > this.targetDate) {
+      if (Date.now() > this.targetDate) {
         clearInterval(timerId);
         alert("Время истекло!");
+        return;
       }
       this.updateTime(this.targetDate);
     }, 1000);
   }
 
   updateTime(date) {
-    const deltaTime = date - new Date();
+    const deltaTime = date - Date.now();
     const remaningTime = this.getTimeComponents(deltaTime);
     this.updateTextContent(remaningTime);
   }
